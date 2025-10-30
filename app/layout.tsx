@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,y
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -73,7 +73,6 @@ export default function RootLayout({
         <Suspense fallback={null}>
           <main>{children}</main>
         </Suspense>
-        <FloatingCTA />
         <Analytics />
         <Toaster richColors position="top-right" />
       </body>
